@@ -4,10 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    n1 = 1
-    n2 = 2
-    soma = n1 + n2
-    return render_template('home.html', soma = soma)
+    msg = "Olá mundo!"
+    return render_template('home.html', msg = msg)
 
 if __name__== '__main__':
     app.run(debug=True)
